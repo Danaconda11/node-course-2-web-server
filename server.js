@@ -25,9 +25,9 @@ app.use((req, res, next) => {
 	wear from executing and unintentionally allowing people into the public 
 	folder structure.
 */
-app.use((req, res, next) => {
-	res.render('maintenance.hbs')
-})
+// app.use((req, res, next) => {
+// 	res.render('maintenance.hbs')
+// })
 /* 
 	This must proceed maintenance middle wear else all files in this directory
 	will be reachable via url.
