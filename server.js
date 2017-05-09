@@ -61,6 +61,12 @@ app.get('/', (req, res) => {
 .get('/maintenance', (req, res) => {
 	maintentance()
 })
+.get('/projects', (req, res) => {
+	res.render('projects.hbs', {
+		title : 'Projects',
+		message : 'Projects Page'
+	})
+})
 
 /*
 	heroku sets this environment variable for the port
